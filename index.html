@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body onload="renderLast">
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+      <!-- Timeblocks go here -->  
+    <table id="time" border=0 cellPadding=5 cellSpacing=5 width=668><tr> 
+      <td width=205 align=center>
+        <div id="9h">9AM</div>
+        <div id="10h">10AM</div>
+        <div id="11h">11AM</div>
+        <div id="12h">12PM</div>
+        <div id="13h">1PM</div>
+        <div id="14h">2PM</div>
+        <div id="15h">3PM</div>
+        <div id="16h">4PM</div>
+        <div id="17h">5PM</div>
+      </td>
+      <td id="text" height=70 width=205 align=center>
+        <input id="input9"></input>
+        <br>
+        <input id="input10"></input>
+        <br>
+        <input id="input11"></input>
+        <br>
+        <input id="input12"></input>
+        <br>
+        <input id="input13"></input>
+        <br>
+        <input id="input14"></input>
+        <br>
+        <input id="input15"></input>
+        <br>
+        <input id="input16"></input>
+        <br>
+        <input id="input17"></input>
+      </td>
+      <td id="saves" width=205 align=center>
+        <button id="saveButton9">Save</button>
+        <br>
+        <button id="saveButton10">Save</button>
+        <br>
+        <button id="saveButton11">Save</button>
+        <br>
+        <button id="saveButton12">Save</button>
+        <br>
+        <button id="saveButton13">Save</button>
+        <br>
+        <button id="saveButton14">Save</button>
+        <br>
+        <button id="saveButton15">Save</button>
+        <br>
+        <button id="saveButton16">Save</button>
+        <br>
+        <button id="saveButton17">Save</button>
+      </td>      
+      </tr>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./code.JS"></script>
+
+
+  </body>
+</html>
